@@ -1,0 +1,225 @@
+.footer-container {
+      width: 231px;
+
+      display: inline-block;
+  }
+
+  .logo-footer {
+      margin-bottom: 20px;
+      display: inline-block;
+
+      color: var(--primary-white-color);
+      font-family: raleway, sans-serif;
+      letter-spacing: 0.03em;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 1.19;
+      text-decoration: none;
+  }
+
+  .footer {
+      padding-top: 60px;
+      padding-bottom: 60px;
+      background-color: var(--background-hero);
+      & .container {
+      display: flex;
+      align-items: baseline;
+  }
+
+  }
+
+
+  .footer-link .link {
+      color: rgba(255, 255, 255, 0.6);
+      text-decoration: none;
+
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.03em;
+      transition-property: color, fill;
+      transition-duration: 250ms;
+      transition-timing-function: var(--timing);
+      &.footer-list:not(:last-child) {
+      margin-bottom: 9px;
+
+  }
+
+  &.link:hover,
+  &.link:focus {
+      color: var(--accent-color);
+
+  }
+
+  &.maps {
+      color: var(--primary-white-color);
+      font-style: normal;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.03em;
+
+  }
+
+
+  }
+
+  
+
+  .address {
+      color: var(--primary-white-color);
+      font-style: normal;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.03em;
+  }
+
+  
+  
+
+  .join-container {
+      margin-left: 70px;
+      display: inline-block;
+  }
+
+  .footer-join {
+
+      display: inline-block;
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--primary-white-color);
+  }
+
+  .footer-item-icon {
+      width: 44px;
+      height: 44px;
+      display: inline-block;
+      &:not(:last-child) {
+      margin-right: 10px;
+  }
+
+  }
+
+  .footer-img-icon {
+      fill: var(--primary-white-color);
+  }
+
+  .footer-icon-link {
+      width: 100%;
+      height: 100%;
+      background-color: var(--footer-icon-background);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      transition-property: background-color, fill;
+      transition-duration: 250ms;
+      transition-timing-function: var(--timing);
+      &:hover,
+      &:focus {
+      background-color: var(--accent-color);
+  }
+
+      &:hover .footer-img-icon,
+      &:focus .footer-img-icon {
+      fill: var(--primary-white-color);
+
+  }
+  }
+
+  
+
+  
+
+  /* Footer підпис на розсилку */
+
+  .subscribe-container {
+      display: flex;
+      margin-left: auto;
+      align-items: flex-end;
+      & .button-hero {
+      min-width: 200px;
+      height: 50px;
+      margin-left: 12px;
+      font-size: 16px;
+      line-height: 30px;
+      display: flex;
+      align-items: center;
+
+  }
+  }
+
+  .subscribe-img-icon {
+      margin-left: 10px;
+      fill: var(--primary-white-color);
+  }
+
+  .lisense {
+      color: var(--accent-color);
+      margin-left: 4px;
+  }
+
+  
+
+  .subscribe-form-container label {
+
+
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--primary-white-color);
+      &.title {
+      margin-bottom: 20px;
+      display: block;
+
+  }
+
+  &.subscribe-form {
+
+      display: flex;
+      align-items: center;}
+  }
+
+  
+
+
+  .subscribe-form {
+      color: var(--primary-white-color);
+      box-sizing: border-box;
+      padding-left: 16px;
+      padding-right: 16px;
+      width: 358px;
+      height: 50px;
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: 4px;
+      transition-duration: 250ms;
+      transition-timing-function: var(--timing);
+      &::placeholder {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      align-items: center;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+  }
+  &:hover,
+  &:focus {
+      border: 1px solid var(--accent-color);
+      outline: transparent;
+  }
+  }
+
+  

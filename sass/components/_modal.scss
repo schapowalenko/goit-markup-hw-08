@@ -1,0 +1,230 @@
+ .modal-img-icon {
+      position: absolute;
+      top: 50%;
+      left: 12px;
+      transform: translateY(-50%);
+      fill: var(--title-text-color);
+      transition-duration: 250ms;
+      transition-timing-function: var(--timing);
+  }
+
+  
+
+  .modal-input-wrapper {
+      position: relative;
+  }
+
+  .modal-input-group {
+      margin-bottom: 10px;
+      & label {
+      display: block;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.01em;
+      margin-bottom: 4px;
+
+  }
+  }
+
+  .modal-comment label {
+      display: block;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.01em;
+      margin-bottom: 4px;
+  }
+
+  
+
+  .modal-heading {
+      margin-top: 0;
+      margin-bottom: 12px;
+
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 23px;
+      text-align: center;
+      letter-spacing: 0.03em;
+
+      color: var(--title-text-color);
+  }
+
+  
+
+  .modal-input {
+
+      padding-right: 16px;
+      padding-left: 42px;
+      width: 100%;
+      height: 40px;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      border-radius: 4px;
+      transition-duration: 250ms;
+      transition-timing-function: var(--timing);
+      &:hover,
+      &:focus {
+      border: 1px solid var(--accent-color);
+      outline: transparent;
+
+  }
+      &:hover+svg,
+      &:focus+svg {
+      fill: var(--accent-color);
+  }
+  }
+
+  
+
+  .modal-input-comment {
+      padding-right: 16px;
+      padding-left: 16px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      margin-bottom: 20px;
+      width: 100%;
+      height: 120px;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      border-radius: 4px;
+      resize: none;
+      transition-duration: 250ms;
+      transition-timing-function: var(--timing);
+      &:hover,
+      &:focus {
+      border: 1px solid var(--accent-color);
+      outline: transparent;
+
+  }
+      &::placeholder {
+      font-family: 'Roboto';
+      font-style: normal;
+
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.01em;
+      color: rgba(117, 117, 117, 0.5);
+  }
+
+  }
+
+  
+
+  
+
+  .form-container {
+
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-bottom: 40px;
+      padding-top: 40px;
+      & .button-hero {
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+  }
+  }
+
+  .input-checkbox {
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+  }
+
+
+
+
+  /* Модельне вікно контейнер*/
+
+  .backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.2);
+      transition-duration: 250ms;
+      transition-timing-function: var(--timing);
+      &.is-hidden {
+      opacity: 0;
+      pointer-events: none;
+      transition-duration: 250ms;
+      transition-timing-function: var(--timing);
+  }
+  }
+
+  .modal-button {
+
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      cursor: pointer;
+      background-color: var(--primary-white-color);
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      transition-duration: 250ms;
+      transition-timing-function: var(--timing);
+      &:hover,
+      &:focus {
+      fill: var(--accent-color);
+  }
+  }
+
+  
+
+  
+
+  .modal {
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 528px;
+      height: 581px;
+      background-color: var(--primary-white-color);
+      box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+      border-radius: 4px;
+  }
+
+  .modal-politic-check {
+
+      width: 16px;
+      height: 15px;
+      border: 2px solid var(--title-text-color);
+      border-radius: 2px;
+      margin-right: 7px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition-duration: 250ms;
+      transition-timing-function: var(--timing);
+      cursor: pointer;
+      & svg {
+      fill: transparent;
+
+  }
+
+  &:checked+label>span {
+      border: none;
+      background-color: var(--accent-color);
+  }
+
+  &:checked+label>span svg {
+      fill: var(--primary-white-color);
+  }
+  }
+
+  
+
+  .modal-politic-label {
+      display: flex;
+
+  }

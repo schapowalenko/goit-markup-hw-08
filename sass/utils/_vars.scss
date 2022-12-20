@@ -1,0 +1,22 @@
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --primary-white-color: #FFFFFF;
+    --primary-black-color: #000000;
+    --background-button-color: #F5F4FA;
+    --line-color: #ececec;
+    --background-hero: #2F303A;
+    --icon-color: #AFB1B8;
+    --footer-icon-background: rgba(255, 255, 255, 0.1);
+    --border-color: #EEEEEE;
+    --btn-hover-hero: #188CE8;
+    --timing: cubic-bezier(0.4, 0, 0.2, 1);
+}
+ body {
+     background-color: var(--primary-white-color);
+     color: var(--primary-text-color);
+     font-size: 14px;
+     font-family: roboto, sans-serif;
+     letter-spacing: 0.03em;
+ }

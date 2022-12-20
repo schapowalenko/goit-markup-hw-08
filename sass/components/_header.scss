@@ -1,0 +1,114 @@
+/* header */
+.line {
+    border-bottom: 1px solid var(--line-color);
+}
+
+.header {
+
+    display: flex;
+    align-items: center;
+
+
+}
+
+/* навігація */
+.site-nav {
+    display: flex;
+    & .item+.item {
+    margin-left: 50px;
+
+}
+
+& .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition-property: color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing);
+}
+& .link:hover,
+& .link:focus {
+    color: var(--accent-color);
+}
+
+& .link.current {
+    position: relative;
+    color: var(--accent-color);
+
+}
+
+& .link.current::after {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+}
+
+
+}
+
+
+
+
+
+.contact-nav {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    & .item+.item {
+    margin-left: 50px;
+
+}
+& .item:hover .contact-icons,
+& .item:focus .contact-icons {
+    fill: var(--accent-color);
+}
+
+& .link {
+
+    display: block;
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition-property: color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing);
+}
+
+& .link:hover,
+& .link:focus {
+    color: var(--accent-color);
+}
+}
+
+.contact-icons {
+    fill: var(--icon-color);
+    margin-right: 10px;
+    transition-property: color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing);
+
+}
+
+
+
+
