@@ -29,6 +29,25 @@
     transition-property: fill, border;
     transition-duration: 250ms;
     transition-timing-function: var(--timing);
+    @media screen and (min-width: 480px){
+    width: 210px;
+    height: 92px;
+    margin-bottom: 30px;
+    }
+    
+    @media screen and (min-width: 768px){
+    width: 226px;
+    height: 92px;
+    margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px){
+    width: 170px;
+    height: 92px;
+    margin-bottom: 30px;
+
+    }
+
+
     &:hover .item-img-icon,
     &:focus .item-img-icon{
     fill: var(--accent-color);
@@ -53,10 +72,47 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    & :not(:last-child){
-    margin-right: 30px;
+    flex-wrap: wrap;
+    @media screen and (min-width: 480px){
+    width: 480px;
+    height: auto;
+    }
+    @media screen and (min-width: 768px){
+    width: 768px;
+    height: auto;
+    }
+    @media screen and (min-width: 1200px){
+    width: 1200px;
+    height: auto;
+    }
+    
 }
-}
+@media screen and (min-width: 480px){
+    .client-item{
+       margin-right: 30px;
+       
+    }
+    
+
+    }
+    @media screen and (min-width: 768px){
+    .client-item{
+       margin-right: 30px;
+       
+    }
+    
+
+    }
+     @media screen and (min-width: 1200px){
+    .client-item:nth-last-child(2){
+       margin-right: 30px;
+       
+    }
+    
+
+    }
+
+
 
 
 

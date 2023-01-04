@@ -24,6 +24,17 @@
 .worck {
     padding-top: 0px;
     padding-bottom: 94px;
+    @include tel {
+        
+    display: none;
+  }
+  @include tablet {
+    
+    display: none;
+  }
+  @include desktop {
+    display: block;
+  }
     & .item {
     position: relative;
 }

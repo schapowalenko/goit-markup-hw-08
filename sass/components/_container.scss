@@ -1,9 +1,39 @@
 .container {
-    display: block;
-    width: 1200px;
+    
+    max-width: 480px;
+    height: auto;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
+  @include tablet {
+    max-width: 768px;
+  }
+   @include desktop {
+    max-width: 1200px;
+  }
+}
+
+.hero-container{
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/background-hero-tel.jpg");
+    max-width: 480px;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    @include tablet {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/background-hero-tab.jpg");
+    max-width: 768px;
+  }
+  @include desktop {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/background-hero.jpg");
+    max-width: 1200px;
+  }
 }

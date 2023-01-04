@@ -1,20 +1,52 @@
 .peculiarities-list {
     display: flex;
+    width: 100%;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    & .item {
+    
+    @media screen and (min-width: 480px){
+        max-width: 480px;
+    }
+    @media screen and (min-width: 768px){
+        max-width: 768px;
+        
+        
+        
+        
+    }
+    @media screen and (min-width: 1200px){
+        max-width: 1200px;
+        
+        
+       
+    }
 
+    & .item {
+        width: 100%;
+    margin-bottom: 30px;
     justify-content: center;
     align-items: center;
     width: 270px;
-    height: 120px;
+    height: auto;
+    @media screen and (min-width: 480px){
+        width: 450px;
 
+    }
+    @media screen and (min-width: 768px){
+        width: 354px;
+        
+        
+        
+        
+    }
+    @media screen and (min-width: 1200px){
+        width: 270px;
+    }
 
 }
 
-& .item:not(:last-child) {
-    margin-right: 30px;
-}
+
 
 & .title {
     margin-top: 0;
@@ -24,6 +56,18 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
+    @media screen and (min-width: 480px){
+        text-align: center;
+
+    }
+    @media screen and (min-width: 768px){
+        text-align: left;
+
+    }
+    @media screen and (min-width: 1200px){
+        text-align: left;
+
+    }
 }
 
 & .subtitle {
@@ -38,7 +82,9 @@
 }
 
 .peculiarities-item {
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 270px;
@@ -46,16 +92,54 @@
     margin-bottom: 30px;
     background-color: var(--background-button-color);
     border-radius: 4px;
-    &:not(:last-child) {
-    margin-right: 30px;
-}
+    @media screen and (min-width: 480px){
+        width: 450px;
+    }
+    @media screen and (min-width: 768px){
+        
+        
+        width: 354px;
+        
+    }
+  
+    @media screen and (min-width: 1200px){
+        width: 270px;
+        
+        
+    }
+    
 
 }
 
 
 
 .peculiarities {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    
+    
+}
+
+@media screen and (min-width: 768px){
+.peculiarities-margin:nth-child(2n + 1){
+    margin-right: 30px;
+    
+    
+   
+
+}}
+@media screen and (min-width: 1200px){
+.peculiarities-margin:nth-last-child(2){
+    margin-left: 30px;
+    
+    
+   
+
+}}
+.peculiarities-margin{
+    height: 248px;
+    
+    
+   
+
 }
 
