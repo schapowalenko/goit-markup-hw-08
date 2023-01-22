@@ -26,8 +26,9 @@
         width: 100%;
     margin-bottom: 30px;
     justify-content: center;
+    
     align-items: center;
-    width: 270px;
+    width: 100%;
     height: auto;
     @media screen and (min-width: 480px){
         width: 450px;
@@ -49,6 +50,7 @@
 
 
 & .title {
+    text-align: center;
     margin-top: 0;
     margin-bottom: 10px;
     color: var(--title-text-color);
@@ -87,7 +89,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 270px;
+    display: none;
     height: 120px;
     margin-bottom: 30px;
     background-color: var(--background-button-color);
@@ -135,11 +137,5 @@
    
 
 }}
-.peculiarities-margin{
-    height: 248px;
-    
-    
-   
 
-}
 
