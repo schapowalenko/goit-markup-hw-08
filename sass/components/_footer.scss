@@ -6,9 +6,12 @@
      margin: 0 auto;
   }
   @include tablet {
-        text-align: center;
+        text-align: start;
      margin-left: 61px;
-    
+     width: 264px;
+     margin: 0;
+    margin-right: 24px;
+
   }
   @include desktop {
     margin: 0;
@@ -31,6 +34,11 @@
       font-size: 26px;
       line-height: 1.19;
       text-decoration: none;
+       @include tablet {
+    
+    
+      
+  }
   }
 
   .footer {
@@ -42,7 +50,7 @@
      & .subtitle{
         margin: 0;
      }
-      & .container {
+      & .container-footer {
        
       display: flex;
       align-items: baseline;
@@ -50,8 +58,7 @@
       text-align: center;
       flex-wrap: wrap;
       @include tablet {
-    flex-wrap: nowrap;
-    
+   margin-left: 108px;
       
   }
       @include desktop {
@@ -131,11 +138,11 @@
   }
    @include tablet {
      align-items: center;
-     margin: 0 auto;
+     margin: 0;
+     text-align: start;
      
      
-     
-     width: 100%;
+     width: 264px;
   }
   @include desktop{
       margin: 0;
@@ -229,9 +236,9 @@
    @include tablet {
      
     display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
-     align-items: baseline;
+flex-wrap: nowrap;
+
+     align-items: flex-end;
      
     
      
@@ -270,8 +277,7 @@ justify-content: space-around;
      
   }
   @include tablet {
-     margin:0 auto;
-     margin-top: 20px;
+     margin: 0;
      
   }
   @include desktop {
@@ -330,7 +336,13 @@ justify-content: space-around;
       flex-wrap: wrap;
       
   }
-
+.subscribe-form-container{
+    @include tablet {
+     width: 264px;
+     margin-right: 24px;
+     text-align: start;
+  }
+}
   
    
 

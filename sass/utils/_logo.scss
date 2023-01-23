@@ -11,8 +11,16 @@
     line-height: 1.19;
     text-decoration: none;
     @include tel {
-    margin-right: auto;
+    justify-content: flex-start;
+    margin: 0;
   }
+  @include tablet {
+    margin-right:0;
+  }
+  @include desktop {
+    margin-right: 76px;
+  }
+  
 }
 
 .logo-style {

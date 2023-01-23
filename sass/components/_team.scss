@@ -90,8 +90,8 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 0;
-    
-   align-items: center;
+    align-items: center;
+   
     
 
    @media screen and (min-width: 480px){
@@ -104,6 +104,8 @@
  @media screen and (min-width: 768px){
     & .item{
         max-width: 354px;
+        height: auto;
+        align-items: center;
     }}
     @media screen and (min-width: 768px){
     & .item:nth-child(2n + 1){
@@ -112,10 +114,13 @@
     margin-top: 30px;
     
     }}
-    
+     @media screen and (min-width: 1200px){
+    & .item{
+        max-width: 264px;
+    }}
     @media screen and (min-width: 1200px){
     & .item:nth-last-child(2){
-    margin-left: 30px;
+    margin-left: 24px;
     
     
     

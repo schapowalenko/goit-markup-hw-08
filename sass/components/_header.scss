@@ -8,14 +8,23 @@
     display: flex;
     align-items: center;
 width: 100%;
+   @media screen and (min-width: 1200px){
+      width: 100%;
 
-}
+
+}}
 
 
 /* навігація */
 .site-nav {
     display: flex;
-    display: none;
+   display: none;
+   @media screen and (min-width: 1200px){
+        display: block;
+        display: flex;
+      
+        
+    }
     & .item+.item {
     margin-left: 50px;
 
@@ -71,6 +80,13 @@ width: 100%;
     justify-content: center;
     margin-left: auto;
     display: none;
+    @media screen and (min-width: 1200px){
+        display: block;
+        display: flex;
+        width: 100%;
+        justify-content: end;
+        
+    }
     & .item+.item {
     margin-left: 50px;
 
@@ -165,6 +181,9 @@ width: 100%;
   letter-spacing: 0.02em;
 
   color: #212121;
+  @media screen and (min-width: 1200px){
+        display: none;
+    }
 }
 // .mob-nav__link :hover,
 // :focus {
