@@ -19,15 +19,16 @@
        <div class="container header">
         <nav class="header">
         <a href="./index.html" class="logo"><span class="logo-style">WEB</span>STUDIO</a>
-        <button class="js-open-menu">
+        <button class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
                 <svg class="" width="40px" height="40px">
                 <use href="./img/icons.svg#icon-menu">
                 </use>
                 </svg>
               </button>
-              <div class="mobile-menu">
-
-              </div>
+              
         <ul class="site-nav list">
             <li class="item"><a href="./index.html" class="link item current">Studio</a></li>
             <li class="item"><a href="./portfolio.html" class="link">Portfolio</a></li>
@@ -230,6 +231,38 @@ problem to walk away with the perfect and creative solution. </p>
             </div>  
          
     </footer>
+    <!-- Mobile menu -->
+    <section class="menu-container js-menu-container " id="mobile-menu"> 
+        <button class="menu-toggle js-close-menu">
+                <svg class="" width="18px" height="18pxpx">
+                <use href="./img/icons.svg#icon-close-icon">
+                </use>
+                </svg>
+              </button>
+        <div class="mob-nav">
+        <ul class="site-nav-mob list">
+            <li class="item"><a href="./index.html" class="link item current">Studio</a></li>
+            <li class="item"><a href="./portfolio.html" class="link">Portfolio</a></li>
+            <li class="item"><a href="" class="link">Contacts</a></li>
+        </ul>
+        </div>
+        <div class="mob-con">
+        <ul class="contact-nav-mob list">
+        
+        <li class="item"><a href="tel:+380961111111" class="link"></use></svg>+11 (000) 111-11-11</a></li>
+        <li class="item"><a href="mailto:info@devstudio.com" class="link2">info@devstudio.com</a></li>
+    </ul>
+    </div>
+    <div class="mob-soc">
+    <ul class="team-icon list">
+                        <li class="item-icon"><a href="#" class="team-icon-link"><svg width="20" height="20" class="item-img-icon"><use href="./img/icons.svg#icon-instagram"></use></svg></a></li>
+                        <li class="item-icon"><a href="#" class="team-icon-link"><svg width="20" height="20" class="item-img-icon"><use href="./img/icons.svg#icon-twitter"></use></svg></a></li>
+                        <li class="item-icon"><a href="#" class="team-icon-link"><svg width="20" height="20" class="item-img-icon"><use href="./img/icons.svg#icon-facebook"></use></svg></a></li>
+                        <li class="item-icon"><a href="#" class="team-icon-link"><svg width="20" height="20" class="item-img-icon"><use href="./img/icons.svg#icon-linkedin"></use></svg></a></li>
+                    </ul>
+                    </div>
+
+    </section>
     <!-- Модельне вікно -->
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
@@ -266,7 +299,7 @@ problem to walk away with the perfect and creative solution. </p>
                  </div>
                     <div class="modal-comment">
                         <label for="comment">Comment</label>
-                        <textarea class="modal-input-comment" placeholder="Введіть текст" name="comment" id="comment"></textarea>
+                        <textarea class="modal-input-comment" placeholder="Text input" name="comment" id="comment"></textarea>
                     </div>
                  <div class="input-checkbox">
                     <input type="checkbox" name="politic" id="politic" class="modal-politic-check visually">
