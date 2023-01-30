@@ -846,6 +846,7 @@ body {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 100%;
 }
 @media screen and (min-width: 480px) {
   .clients-list {
@@ -866,9 +867,13 @@ body {
   }
 }
 
+.client-item {
+  margin-right: 16px;
+}
+
 @media screen and (min-width: 480px) {
   .client-item {
-    margin-right: 30px;
+    margin-right: 16px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1162,6 +1167,10 @@ body {
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%;
   }
+}
+
+.footer-container .subtitle {
+  text-align: left;
 }
 
 .logo-footer {
